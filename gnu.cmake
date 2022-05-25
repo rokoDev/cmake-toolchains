@@ -1,0 +1,2 @@
+set(CPP_COMPILER_OPTIONS "-std=c++17 -Wshadow -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -Wold-style-cast -Wfloat-equal -Wcast-align -fno-rtti")
+set(CMAKE_CXX_FLAGS_INIT ${CPP_COMPILER_OPTIONS})
