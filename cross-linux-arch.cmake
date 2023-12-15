@@ -3,7 +3,7 @@ set(CMAKE_SYSTEM_VERSION 1)
 set(CMAKE_SYSTEM_PROCESSOR $ENV{ARCH})
 
 # which C and C++ compiler to use
-set(CMAKE_C_COMPILER                $ENV{C})
+set(CMAKE_C_COMPILER                $ENV{CC})
 set(CMAKE_CXX_COMPILER              $ENV{CXX})
 set(CMAKE_RANLIB                    $ENV{RANLIB})
 
