@@ -16,7 +16,18 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
 set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 
-set(CPP_COMPILER_OPTIONS "-std=c++17 -Wshadow -pedantic-errors -Wall -Wextra -Wconversion -Wsign-conversion -Wold-style-cast -Wfloat-equal -Wcast-align -fno-rtti")
+set(CPP_COMPILER_OPTIONS_LIST
+	-std=c++17
+	-Wshadow
+	-pedantic-errors
+	-Wall
+	-Wextra
+	-Wconversion
+	-Wsign-conversion
+	-Wold-style-cast
+	-Wcast-align
+	-fno-rtti)
+string (REPLACE ";" " " CPP_COMPILER_OPTIONS "${CPP_COMPILER_OPTIONS_LIST}")
 set(CMAKE_CXX_FLAGS_INIT ${CPP_COMPILER_OPTIONS})
 
 # setup docker container "test-host" which can emulate target architecture for using by "ctest" command
