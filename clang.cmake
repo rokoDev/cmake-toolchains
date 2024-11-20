@@ -13,7 +13,7 @@ set(CPP_COMPILER_OPTIONS_LIST
 	-Wold-style-cast
 	-Wcast-align
 	-fno-exceptions
-	-fno-rtti)
+	)
 string(REPLACE ";" " " CPP_COMPILER_OPTIONS "${CPP_COMPILER_OPTIONS_LIST}")
 
 set(CMAKE_CXX_FLAGS_INIT ${CPP_COMPILER_OPTIONS})
